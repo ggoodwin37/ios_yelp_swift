@@ -34,9 +34,6 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="320" height="184"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOp-I0-HH1">
-                                                                    <rect key="frame" x="8" y="8" width="66" height="66"/>
-                                                                </imageView>
                                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="S46-E4-K2A">
                                                                     <rect key="frame" x="82" y="40" width="83" height="15"/>
                                                                 </imageView>
@@ -76,6 +73,9 @@
                                                                     <color key="textColor" red="0.52410827020202022" green="0.52410827020202022" blue="0.52410827020202022" alpha="1" colorSpace="calibratedRGB"/>
                                                                     <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                                 </label>
+                                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JOp-I0-HH1">
+                                                                    <rect key="frame" x="8" y="8" width="66" height="66"/>
+                                                                </imageView>
                                                             </subviews>
                                                         </tableViewCellContentView>
                                                     </tableViewCell>
@@ -88,15 +88,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="addressLabel" destination="6VB-Ad-a5a" id="o3g-I4-dfJ"/>
-                        <outlet property="categoriesLabel" destination="xLA-4v-6v6" id="RUj-XQ-XAr"/>
-                        <outlet property="distanceLabel" destination="dRA-b3-9ld" id="kIf-Jw-pdM"/>
-                        <outlet property="nameLabel" destination="8nw-pQ-sqb" id="ZKA-JR-QP2"/>
-                        <outlet property="ratingImageView" destination="S46-E4-K2A" id="TFR-et-nno"/>
-                        <outlet property="reviewsCountLabel" destination="uKG-uD-cJt" id="oYL-Zi-gAr"/>
-                        <outlet property="thumbImageView" destination="JOp-I0-HH1" id="W9Y-EM-0yn"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
