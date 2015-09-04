@@ -78,6 +78,15 @@
                                                                 </imageView>
                                                             </subviews>
                                                         </tableViewCellContentView>
+                                                        <connections>
+                                                            <outlet property="addressLabel" destination="6VB-Ad-a5a" id="AM8-Pz-fKw"/>
+                                                            <outlet property="categoriesLabel" destination="xLA-4v-6v6" id="guH-r3-kor"/>
+                                                            <outlet property="distanceLabel" destination="dRA-b3-9ld" id="feg-V1-TCt"/>
+                                                            <outlet property="nameLabel" destination="8nw-pQ-sqb" id="pwW-4u-zGS"/>
+                                                            <outlet property="ratingsImageView" destination="S46-E4-K2A" id="npy-yc-Ycc"/>
+                                                            <outlet property="reviewsCountLabel" destination="veO-Jg-8t3" id="B6V-6f-A74"/>
+                                                            <outlet property="thumbImageView" destination="JOp-I0-HH1" id="eYb-HZ-ZHP"/>
+                                                        </connections>
                                                     </tableViewCell>
                                                 </prototypes>
                                             </tableView>
@@ -88,6 +97,9 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="Sdg-QS-SIc" id="Sct-aa-vS5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fgb-4b-F1b" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
