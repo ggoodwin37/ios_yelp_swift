@@ -43,3 +43,4 @@ class BusinessViewCell: UITableViewCell {
     }
 
 }
+// TODO: pick up at the start of this video: https://www.youtube.com/watch?v=N6qkyMNTYAA&list=PLrT2tZ9JRrf7p1AoQ0C7APLImJjdUiEbA&index=2
