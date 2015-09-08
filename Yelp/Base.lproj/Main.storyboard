@@ -78,6 +78,7 @@
                                             <constraints>
                                                 <constraint firstItem="JOp-I0-HH1" firstAttribute="leading" secondItem="fM8-ve-4W4" secondAttribute="leading" constant="8" id="gZf-c0-tfk"/>
                                                 <constraint firstItem="JOp-I0-HH1" firstAttribute="top" secondItem="fM8-ve-4W4" secondAttribute="top" constant="8" id="nia-Tk-Z6F"/>
+                                                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="JOp-I0-HH1" secondAttribute="bottom" constant="12" id="wRz-gW-ufZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
