@@ -8,7 +8,7 @@
 
 import UIKit
 
-class FiltersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+class FiltersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, SwitchCellDelegate {
     @IBOutlet weak var filtersTable: UITableView!
 
     var categories: [[String:String]]!
@@ -44,7 +44,12 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = filtersTable.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath) as! SwitchCell
         cell.switchLabel.text = categories[indexPath.row]["name"]
+        cell.delegate = self
         return cell
+    }
+
+    internal func switchCell(switchCell: SwitchCell, didChangeValue value: Bool) {
+        print("yo")
     }
     /*
     // MARK: - Navigation
