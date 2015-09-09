@@ -40,7 +40,16 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
 
     @IBAction func onSearch(sender: AnyObject) {
         if (delegate != nil) {
-            let filters = [String:AnyObject]()
+            var filters = [String:AnyObject]()
+            var selectedCategories = [String]()
+            for (row, isSelected) in switchStates {
+                if (isSelected) {
+                    selectedCategories.append(categories[row]["code"]!)
+                }
+            }
+            if (selectedCategories.count > 0) {
+                filters["categories"] = selectedCategories
+            }
             delegate?.filtersViewController?(self, didUpdateFilters: filters)
         }
         dismissViewControllerAnimated(true, completion: nil)
