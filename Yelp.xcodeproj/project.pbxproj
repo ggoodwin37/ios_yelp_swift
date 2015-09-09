@@ -18,6 +18,7 @@
 		22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */; };
 		F3A2EE981B9A625100D20296 /* BusinessViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3A2EE971B9A625100D20296 /* BusinessViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 		F3CAFE391B9FAF6C00FFAE78 /* SwitchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAFE381B9FAF6C00FFAE78 /* SwitchCell.swift */; settings = {ASSET_TAGS = (); }; };
+		F3CAFE3B1B9FB04600FFAE78 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3CAFE3A1B9FB04600FFAE78 /* FiltersViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		C56EF0CE844A4EE5819C72AF /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3A2EE971B9A625100D20296 /* BusinessViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusinessViewCell.swift; sourceTree = "<group>"; };
 		F3CAFE381B9FAF6C00FFAE78 /* SwitchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwitchCell.swift; sourceTree = "<group>"; };
+		F3CAFE3A1B9FB04600FFAE78 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				22AAAA9B1AEA1EC300A544AF /* BusinessesViewController.swift */,
+				F3CAFE3A1B9FB04600FFAE78 /* FiltersViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -320,6 +323,7 @@
 			files = (
 				22AAAA9C1AEA1EC300A544AF /* BusinessesViewController.swift in Sources */,
 				22AAAA991AEA0A9700A544AF /* Business.swift in Sources */,
+				F3CAFE3B1B9FB04600FFAE78 /* FiltersViewController.swift in Sources */,
 				F3A2EE981B9A625100D20296 /* BusinessViewCell.swift in Sources */,
 				222D8A7D19CCFAE000D2DB53 /* YelpClient.swift in Sources */,
 				222D8A5B19CCF9F900D2DB53 /* AppDelegate.swift in Sources */,
