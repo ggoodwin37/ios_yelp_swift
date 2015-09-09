@@ -8,11 +8,16 @@
 
 import UIKit
 
-class FiltersViewController: UIViewController {
+class FiltersViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var filtersTable: UITableView!
+
+    var categories: [[String:String]]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        categories = yelpCategories()
+        filtersTable.dataSource = self
+        filtersTable.delegate = self
 
         // Do any additional setup after loading the view.
     }
@@ -29,6 +34,24 @@ class FiltersViewController: UIViewController {
 
     @IBAction func onSearch(sender: AnyObject) {
         dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    func yelpCategories() -> [[String:String]]! {
+        // TODO find full list
+        return [
+            ["name" : "Czech", "code" : "czech"],
+            ["name" : "French", "code" : "french"],
+        ]
+    }
+
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return categories.count
+    }
+
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = filtersTable.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath) as! SwitchCell
+        cell.switchLabel.text = categories[indexPath.row]["name"]
+        return cell
     }
     /*
     // MARK: - Navigation
