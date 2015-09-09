@@ -12,6 +12,7 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
     @IBOutlet weak var filtersTable: UITableView!
 
     var categories: [[String:String]]!
+    var switchStates = [Int:Bool]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,11 +46,13 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
         let cell = filtersTable.dequeueReusableCellWithIdentifier("SwitchCell", forIndexPath: indexPath) as! SwitchCell
         cell.switchLabel.text = categories[indexPath.row]["name"]
         cell.delegate = self
+        cell.onSwitch.on = switchStates[indexPath.row] ?? false
         return cell
     }
 
     internal func switchCell(switchCell: SwitchCell, didChangeValue value: Bool) {
-        print("yo")
+        let indexPath = filtersTable.indexPathForCell(switchCell)!
+        switchStates[indexPath.row] = value
     }
     /*
     // MARK: - Navigation
